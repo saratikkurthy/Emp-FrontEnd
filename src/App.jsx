@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import EmployeeComponent from './components/EmployeeComponent'
 import DeleteEmployeeComponent from './components/DeleteEmployeeComponent'
 import ListEmpCompGrid from './components/ListEmplCompGrid'
+import ListDepartmentComponent from './components/ListDepartmentComponent'
+import DepartmentComponent from './components/DepartmentComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,9 @@ function App() {
           <Route path="/add-employee" element={<EmployeeComponent />}></Route>
           <Route path="/edit-employee/:id" element={<EmployeeComponent />}></Route>
           <Route path="/delete-employee/:id" element={<DeleteEmployeeComponent />}></Route>
+          <Route path="/departments" element={<ListDepartmentComponent />}></Route>
+          <Route path="/add-department" element={<DepartmentComponent />}></Route>
+          
 
         </Routes>
         <FooterComponent />

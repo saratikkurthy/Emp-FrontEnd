@@ -1,12 +1,10 @@
 import React, { useEffect, useState, FunctionComponent } from 'react'
 import { getEmployee, listEmployees, updateEmployee } from '../services/EmployeeService'
 import { useNavigate } from 'react-router-dom'
-import PagingComponent from './PagingComponent'
 import { AgGridReact } from 'ag-grid-react';
 
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
-import ConfirmationPopup from './ConfirmationPopup';
 
 function ListEmpCompGrid() {
   const [rowData, setRowData] = useState([]);
