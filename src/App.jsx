@@ -13,19 +13,19 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <HeaderComponent/>
-    <Routes>
-      {/* //<Route path="/" element={    <ListEmpComp/>}></Route> */}
-       {/* <Route path="/employees" element={    <ListEmpComp/>}></Route>  */}
-      <Route path="/employees" element={    <ListEmpCompGrid/>}></Route>
-      <Route path="/add-employee" element={    <EmployeeComponent/>}></Route>
-      <Route path="/edit-employee/:id" element={    <EmployeeComponent/>}></Route>
-      <Route path="/delete-employee/:id" element={    <DeleteEmployeeComponent/>}></Route>
-      
-    </Routes>
-    <FooterComponent/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <HeaderComponent />
+        <Routes>
+          {/* //<Route path="/" element={    <ListEmpComp/>}></Route> */}
+          {/* <Route path="/employees" element={    <ListEmpComp/>}></Route>  */}
+          <Route path="/employees" element={<ListEmpCompGrid />}></Route>
+          <Route path="/add-employee" element={<EmployeeComponent />}></Route>
+          <Route path="/edit-employee/:id" element={<EmployeeComponent />}></Route>
+          <Route path="/delete-employee/:id" element={<DeleteEmployeeComponent />}></Route>
+
+        </Routes>
+        <FooterComponent />
+      </BrowserRouter>
     </>
   )
 }

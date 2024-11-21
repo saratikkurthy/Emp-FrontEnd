@@ -1,5 +1,4 @@
 import React from 'react'
-
 const HeaderComponent = () => {
   return (
     <div>
@@ -7,10 +6,8 @@ const HeaderComponent = () => {
         <a class="navbar-brand" href="#">
         &nbsp;&nbsp;&nbsp;Employee Management System
         </a>
-
         </nav>
     </div>
   )
 }
-
 export default HeaderComponent
