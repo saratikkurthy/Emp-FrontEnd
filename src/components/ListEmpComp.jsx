@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import { getEmployee,listEmployees } from '../services/EmployeeService'
 import { useNavigate } from 'react-router-dom'
 import PagingComponent from './PagingComponent'
+import { AgGridReact } from 'ag-grid-react'; 
 
 
 const ListEmpComp = () => {
@@ -47,9 +48,11 @@ const ListEmpComp = () => {
 
     
   return (
+    
     <div className='container'>
     <button type="button" class="btn btn-primary" onClick={addNewEmployee}>Add Employee</button>
     <br></br>
+    
     <table className='table table-striped table-bordered'>
         <thead>
             <tr>
@@ -87,6 +90,7 @@ const ListEmpComp = () => {
         </tbody>
     </table>
     </div>
+    
   )
 }
 
