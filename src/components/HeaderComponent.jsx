@@ -4,9 +4,9 @@ const HeaderComponent = () => {
   return (
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        {/* <a class="navbar-brand" href="#">
         &nbsp;&nbsp;&nbsp;Employee Management System
-        </a>
+        </a> */}
          <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -14,6 +14,9 @@ const HeaderComponent = () => {
         </li>
         <li class="nav-item">
         <NavLink className='nav-link' to="/departments">Deparments</NavLink>
+        </li>
+        <li class="nav-item">
+        <NavLink className='nav-link' to="/users">EmpDepartment</NavLink>
         </li>
       </ul>
     </div>

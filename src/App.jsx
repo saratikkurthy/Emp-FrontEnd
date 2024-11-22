@@ -31,8 +31,31 @@ function App() {
         </Routes>
         <FooterComponent />
       </BrowserRouter>
+
+      
     </>
   )
 }
 
-export default App
+// const App = () => {
+//   const { isAuthenticated } = useAuth0();
+
+//   return (
+//     <Routes>
+//     <Route>
+//       <div>
+//         <Navbar />
+//         {isAuthenticated ? (
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//           </Routes>
+//         ) : (
+//           <LoginButton />
+//         )}
+//       </div>
+//     </Route>
+//     </Routes>
+//   );
+// };
+
+ export default App
