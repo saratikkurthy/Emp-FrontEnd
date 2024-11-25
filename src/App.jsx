@@ -26,8 +26,6 @@ function App() {
           <Route path="/delete-employee/:id" element={<DeleteEmployeeComponent />}></Route>
           <Route path="/departments" element={<ListDepartmentComponent />}></Route>
           <Route path="/add-department" element={<DepartmentComponent />}></Route>
-          
-
         </Routes>
         <FooterComponent />
       </BrowserRouter>
