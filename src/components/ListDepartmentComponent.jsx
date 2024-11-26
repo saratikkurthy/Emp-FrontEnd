@@ -22,7 +22,7 @@ function ListDepartmentComponent (){
       };
     useEffect(() => {
         // Fetch data from your API endpoint
-        fetch('http://192.168.1.139:8080/departments')
+        fetch('http://192.168.4.48:8080/departments')
           .then(response => response.json())
           .then(data => setRowData(data));
       }, []);
